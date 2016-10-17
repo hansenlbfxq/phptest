@@ -1,6 +1,6 @@
 <?php
 use yii\helpers\Console;
-$a=1+'3';
+$a=1+'4';
 echo $a;
 phpinfo();
 ?>
