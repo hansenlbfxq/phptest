@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf8"/>
+    <meta name="applicable-device" content="pc">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <title>管理后台</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+
+    <script src=" /assets/cms/jquery.js"></script>
+    <script src=" /assets/cms/jquery.cookie.js"></script>
+    <script src=" /assets/cms/jquery.form.js"></script>
+
+    <script type=text/javascript>
+        function getData() {
+            var login_name = $.cookie('login_name');
+            var token = $.cookie('token');
+
+
+            var url = $("#url").val();
+            var data = $("#postdata").val();
+            if (data != '') {
+                data = JSON.parse(data);
+            }
+            var type = $("#type").val();
+
+            $.ajax(
+                    {
+                        headers: {
+                            "X-Auth-Client": login_name,
+                            "X-Auth-Token": token,
+                        },
+                        url: url,
+                        type: type,
+                        async: false,
+                        data: data,
+                        dataType: 'json',
+                        success: function (result) {
+                            var res = JSON.stringify(result);
+                            $("#result").val(res);
+                            $("#error").val("");
+                        },
+                        /*error:function(XMLHttpRequest, textStatus, errorThrown) {
+                         alert(XMLHttpRequest.status);
+                         alert(XMLHttpRequest.readyState);
+                         alert(textStatus);
+                         }*/
+                        error: function (error) {
+                            var res = JSON.stringify(error);
+                            $("#error").val(res);
+                            $("#result").val("");
+                        }
+                    }
+            );
+        }
+
+
+    </script>
+</head>
+<body>
+<p>请求地址:<br/><input type="text" name="url" id="url" style="width:500px;"></p>
+<p>请求方法:<br/><input type="text" name="type" id="type" style="width:500px;"></p>
+<p>请求数据：<br/><textarea id="postdata" style="width:500px;"></textarea></p>
+
+<input type="button" name="" value="提交" onclick="getData()">
+
+<p>
+    成功信息:<br/>
+    <textarea id="result" style="width:500px;"></textarea>
+</p>
+<p>
+    失败信息:<br/>
+    <textarea id="error" style="width:500px;"></textarea>
+</p>
+</body>
+</html>

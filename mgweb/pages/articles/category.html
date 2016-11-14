@@ -1,0 +1,21 @@
+<!--文章管理页面-->
+<table id="categoryGrid"></table>
+
+<div id="CateToolbar" style="height: 40px; line-height: 40px">
+
+    <a href="javascript:void(0)" onclick="cateAddOpen()" class="easyui-linkbutton"
+       data-options="iconCls:'icon-add',plain:true">添加</a>
+    <a href="javascript:void(0)" onclick="cateUpOpen()" class="easyui-linkbutton"
+       data-options="iconCls:'icon-edit',plain:true">修改</a>
+    <a href="javascript:void(0)" onclick="cateDelete()" class="easyui-linkbutton"
+       data-options="iconCls:'icon-close',plain:true">删除</a>
+    <a href="javascript:void(0)" onclick="cateReload()" class="easyui-linkbutton"
+       data-options="iconCls:'icon-reload',plain:true">刷新</a>
+
+</div>
+
+<div id="addCates"></div>
+<div id="upCates"></div>
+
+<!--加载js-->
+<script type="text/javascript" src="../../scripts/article/Categories.js"></script>

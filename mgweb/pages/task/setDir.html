@@ -1,0 +1,56 @@
+<div class="easyui-layout" data-options="fit:true,border:false">
+	<div data-options="region:'west',split:false,border:false,collapsible:false" id="west" style="width:350px;padding: 10px;border-right:1px solid #EEE;">
+		<!-- 构建任务目录树 -->
+		<ul id="setDir"></ul>
+		<!-- 树的右键菜单 -->
+		<div id="editBox" class="easyui-menu" style="width:150px;">
+			<div onclick="setDir.openBox()" data-options="iconCls:'icon-add'">添加目录</div>
+			<div onclick="setDir.remove()" data-options="iconCls:'icon-remove'">删除目录</div>
+		</div>
+	</div>
+	
+	<div data-options="region:'center',border:false">
+		<table id="setDirTask"></table>
+	</div>
+	
+	<!-- 树的修改弹出层 -->
+		<div id="mydiv" title="增加目录节点" class="easyui-dialog" data-options="closed:true,modal:true,closable:false" style="width:600px;">
+			<form id="myform">
+				<input type="hidden" name="id" value="" />
+					<table class="fromstyle"> 
+						<tr>
+							<td>节点名称：</td>
+							<td><input type="text" name="name" value="" class="text" /></td>
+						</tr>
+						<tr align="center"  >
+							<td colspan="2"  >
+								<a id="savebtn" class="easyui-linkbutton c8" data-options="iconCls:'icon-add'">添加目录</a>
+								<a id="cancelbtn"  class="easyui-linkbutton" data-options="iconCls:'icon-cancel'">关闭窗口</a>
+							</td>
+						</tr>						  								
+					</table>
+			</form>
+  		</div>
+  	<!-- 审核意见弹出层 -->
+  	<div id="sugBox">
+  		<table id="sugList"></table>
+  	</div>
+  	
+</div>
+
+
+
+<script type="text/javascript" src="../../scripts/TaskManage/setDir.js"></script>
+<script>  
+    function show(){  
+        $("#loading").fadeOut("normal", function(){  
+            $(this).remove();  
+        });  
+    }      
+    var delayTime;  
+    $.parser.onComplete = function(){  
+        if(delayTime)   
+            clearTimeout(delayTime);  
+        delayTime = setTimeout(show,500);  
+    }  
+</script>

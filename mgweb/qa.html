@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf8" />
+<meta name="applicable-device" content="pc">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<title>管理后台</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<script type="text/javascript" src="ui/jquery.min.js"></script>
+<script type="text/javascript" src="ui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="ui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="scripts/jquery.json.min.js"></script>
+<script type="text/javascript" src="scripts/Default.js"></script>
+<script type="text/javascript" src="scripts/jquery.cookie.js"></script>
+<script type="text/javascript" src="scripts/qrck.js"></script>
+
+
+
+<script type=text/javascript >
+function getQas(){
+  var login_name=$.cookie('login_name');
+  var token=$.cookie('token');
+
+
+
+  var url="http://localhost/qrck/mg/web/bs/faq/";
+
+$.ajax(
+    {
+      headers: {
+        "X-Auth-Client":login_name,
+        "X-Auth-Token":token,
+      },
+      url:url,
+      type:'get',
+      async:false,
+      dataType:'json',
+      success:function(result){
+        $("div").html(result);
+      }
+    }
+);
+}
+
+$(function(){
+    //getQas();
+    Qrck.get("bs/faq/","","",function(data){alert(data.total)});
+});
+
+</script>
+</head>
+<body>
+  
+</body>
+</html>

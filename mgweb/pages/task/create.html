@@ -1,0 +1,48 @@
+<table id="task"></table>
+
+ <!-- 创建任务表单 -->
+<div id="addTaskLayout">
+	<form id="createtaskform" method="post">
+	<table class="fromstyle">
+		<tr>
+			<th>任务类型：</th>
+			<td><input id="typeId" type="text" name="typeId" class="text" /></td>
+		</tr>
+		<tr>
+			<th>任务名称：</th>
+			<td><input id="bookName" type="text" name="bookName" class="text"/></td>
+		</tr>
+		<tr>
+			<th>主&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：</th>
+			<td><input id="chiefEditorId" type="text" name="chiefEditorId" class="text"/></td>
+		</tr>
+		<tr>
+			<th>副&nbsp;&nbsp;主&nbsp;&nbsp;编：</th>
+			<td><input id="composeAuditUserId" type="text" name="composeAuditUserId" class="text"/></td>
+		</tr>
+		<tr>
+			<th>执行编辑：</th>
+			<td><input id="composerIds" type="text" name="composerIds" class="text"/>
+			    <input id="composerIds" type="hidden" name="composerIds" /></td>
+		</tr>
+		<tr>
+			<th>目录设置：</th>
+			<td><input id="dirSetUserId" type="text" name="dirSetUserId" class="text"/></td>
+		</tr>
+		<tr>
+			<th>目录审核：</th>
+			<td><input id="dirAuditUserId" type="text" name="dirAuditUserId" class="text"/></td>
+		</tr>
+		<tr>
+			<th>目录分配：</th>
+			<td><input id="taskAsignUserId" type="text" name="taskAsignUserId" class="text"/></td>
+		</tr>
+		<tr>
+			<th>排版校对：</th>
+			<td><input id="adjusterPersonId" type="text" name="adjusterPersonId" class="text"/></td>
+		</tr>
+	</table>
+	</form>
+</div>
+
+<script type="text/javascript" src="../../scripts/TaskManage/createTask.js"></script>

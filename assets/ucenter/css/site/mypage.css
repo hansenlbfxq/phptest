@@ -1,0 +1,51 @@
+
+/*会员表单*/
+.membershipForm{
+    width: 800px;
+    height: 600px;
+    background: #fff;
+    margin-bottom: 40px;
+
+}
+.fromname h3{
+    padding: 10px 0;
+    text-indent:2em;
+}
+.fromSolid{
+    width: 800px;
+    height: 10px;
+    margin: auto;
+    background: rgb(238,238,238);
+}
+.formcontent{
+    margin: 30px auto;
+    line-height: 35px;
+}
+.formcontent div{
+    width: 90%;
+   margin: auto;
+}
+/*单位名称input*/
+.companyDiv input{
+    width: 31%;
+}
+.memberText{
+    width: 606px;
+    height: 250px;
+    resize: none;
+}
+.formAll{
+    width: 100px;
+}
+.formAll ul{
+    float: left;
+}
+.formButton{
+    width: 120px;
+    height: 40px;
+    outline:none;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: rgb(220,0,0);
+}

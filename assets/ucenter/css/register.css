@@ -1,0 +1,222 @@
+body,html,ul,li,div,table,td,tr,span,input,p,header,section,footer{
+    margin: 0;
+    padding: 0;
+}
+header,section,footer{
+    display: block;
+}
+body{
+
+    /*background: rgb(245,245,245);*/
+    font-family: "microsoft Yahei";
+
+}
+section,footer{
+    background: rgb(245,245,245);
+}
+li{
+    list-style: none;
+}
+header{
+    padding: 15px 0;
+
+background-color: #fff;
+
+}
+section{
+    position: relative;
+}
+.logo{
+    margin-top: 10px;
+}
+/*注册标题*/
+.registrationTitle{
+    margin: 40px 0;
+}
+.registrationTitle span{
+    border-left: 14px solid #42629c;
+    border-right: 8px solid #ff9f38;
+    margin: 0 15px;
+}
+
+#pp{
+    font-size: 25px;
+}
+/*背景颜色*/
+.titlebackground{
+    background: #fff;
+    display: table;
+    width: 620px;
+    margin: auto;
+}
+.formtitle{
+    margin-top: 30px;
+}
+.asterisk,.requiredItem{
+    color: red;
+}
+/*线条*/
+.regosterLiSolid,.regosterLiSolid2,.regosterLiSolid3{
+    width: 33.33333%;
+    height: 5px;
+    float: left;
+}
+.regosterLiSolid3{
+    background: orange;
+}
+.regosterLiSolid2,.regosterLiSolid{
+    background: rgb(66,98,156)
+}
+/*footer*/
+footer{
+    padding-bottom: 40px;
+}
+.registerFooterSolid{
+    width: 100%;
+    height: 1px;
+    background: rgb(204,204,204);
+    margin: 30px 0 40px 0;
+}
+.centerBottom{
+    height: 12px;
+}
+.registerFooter{
+    width: 650px;
+}
+.registerFooterP{
+    font-size: 12px;
+    color: #999;
+}
+.registerFooterP a{
+    color: #666;
+}
+.registerFooterP a:hover{
+    color: orange;
+}
+/*协议*/
+#fwxy{
+    display:none;
+    position: relative;
+    left: 50%;
+    margin-left: -300px;
+
+}
+.acceptAgreement{
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+
+}
+#fwxy textarea{
+    width:600px;
+    height:300px;
+}
+/*回到顶部*/
+.goto-top{
+    display: none;
+    position: fixed;
+    top: 70%;
+    right: 150px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: #42629c url(../images/small/goto-top.png) 50% 50% no-repeat;
+}
+.formtitle td{
+    padding:0 0 30px 0;
+}
+.registerTable input{
+    width: 250px;
+    line-height: 30px;
+}
+.registerForm{
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+}
+.registerTable1 td{
+    padding: 0 15px 30px 0;
+}
+.text1{
+    text-indent:11px;
+}
+.text2{
+    text-indent:23px;
+}
+.text3{
+    text-indent:-4px;
+}
+.text4{
+    text-indent: -12px;
+}
+.text5{
+    text-indent: 52px;
+}
+.text6{
+    text-indent: 15px;
+    position: relative;
+}
+.checkbox{
+    width: 13px!important;
+    position: absolute;
+    top:-3px;
+}
+/*详细注册*/
+.detailsFrom{
+    padding-top: 60px;
+    width: 620px;
+    margin: auto;
+
+    background-color: #fff;
+}
+
+input[type="text"], input[type="password"] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.detailsFrom input[type="text"],.detailsFrom select{
+    width: 260px;
+}
+.detailsFrom td{
+    padding:0 0 30px 0;
+}
+.formTitle{
+    text-indent: 78px;
+}
+.formTitle1{
+    text-indent: 90px;
+}
+.formTitle2{
+    text-indent: 36px;
+}
+.formTitle3{
+    text-indent: 106px;
+}
+.formTitle4{
+    text-indent: 62px;
+}
+.formTitle5{
+    text-indent: 110px;
+}
+.formTitle6{
+    text-indent: 63px;
+}
+
+.abc{
+   position: relative;
+   left: 30px;
+}
+/*第三页*/
+.emailVerificatuon{
+    width: 620px;
+    height: 220px;
+    background-color: #fff;
+
+}
+.emailVerificatuon>div{
+    margin:110px 0 0 0 ;
+
+}
+.emailVerUl{
+    width: 650px;
+}

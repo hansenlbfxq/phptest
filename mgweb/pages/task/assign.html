@@ -1,0 +1,32 @@
+<table id="taskAssign"></table>
+
+<div id="assignLayout">
+	<div class="easyui-layout" data-options="fit:true,border:false">
+		<div data-options="region:'west',split:true,border:false,collapsible:false" style="width:200px;padding: 10px;border-right:1px solid #EEE;">
+			<ul id="assignDir"></ul>
+		</div>
+		<div data-options="region:'center',border:false">
+			<form id="saveAssign">
+			<table class="fromstyle">
+				<tr>
+					<th>选择执行编辑：</th>
+					<td>
+						<input id="assignedTaskId" type="hidden" name="assignedTaskId" value="">
+						<input id="assignedUserId" type="text" name="assignedUserId" class="easyui-validatebox" value="">
+					</td>
+				</tr>
+				<tr>
+					<th>目录章节 - ID：</th>
+					<td><input id="nodeIds" type="text" name="nodeIds" class="easyui-validatebox" value=""></td>
+				</tr>
+			</table>
+			</form>
+		</div>
+		<div data-options="region:'south',border:false" style="padding:10px;text-align:right;border-top:1px solid #EEE;">
+			<a class="easyui-linkbutton" data-options="iconCls:'icon-save'" onclick="assign.draft()" style="width:80px">存草稿</a>
+			<a class="easyui-linkbutton" data-options="iconCls:'icon-cancel'" onclick="assign.close()" style="width:80px">取消</a>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../scripts/TaskManage/assignTask.js"></script>

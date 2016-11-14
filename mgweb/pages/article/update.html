@@ -1,0 +1,130 @@
+<div id="upCate">
+    <form id="updateArtitcle" method="post">
+        <table border="1" bordercolor="#a0c6e5" style="border-collapse:collapse;">
+
+            <tr>
+                <td width="10%">
+                    <label>文章名称:</label>
+                </td>
+                <td width="100%">
+                    <input type="text" style="width:100%" data-options="prompt:'文章名称...'"
+                           class="easyui-textbox" name="title">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>文章类型:</label>
+                </td>
+                <td>
+
+                    <input id="upCategory" name="category_id">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>作 者:</label>
+                </td>
+                <td>
+
+                    <input class="easyui-textbox" name="creater" style="width: 40%;"
+                           data-options="prompt:'作者名...'">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>关 键 字:</label>
+                </td>
+                <td style="width:89%">
+
+                    <input class="easyui-textbox" name="keywords">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>文章描述:</lable>
+                </td>
+
+                <td style="width:89%">
+
+                    <input class="easyui-textbox" data-options="multiline:true" name="description">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>文章内容:</lable>
+
+                </td>
+                <td style="width:100%;">
+
+                    <textarea class="easyui-textbox" data-options="multiline:true,prompt:'文章内容...'" name="content"
+                              style="width:100%;height:150px;"> </textarea>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <lable>来源:</lable>
+
+                </td>
+
+                <td>
+
+                    <input class="easyui-textbox" name="source" style="width: 39%;height:20px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>状态</label>
+                </td>
+                <td>
+
+                    <input class="easyui-textbox" id="upStatus" name="status" style="width: 220px;height:20px">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td id="">
+                    <a href="javascript:void(0)" style="padding: 5px; font-size: 16px"
+                       onclick="submitForm()">提交</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<style>
+    #updateArtitcle > table {
+        border: 1px solid #C1DAD7;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    #updateArtitcle > table caption {
+        padding: 0 0 5px 0;
+        width: 700px;
+        font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+        text-align: right;
+    }
+
+    #updateArtitcle > table tr td {
+        border: 1px solid #C1DAD7;
+        background: #fff;
+        font-size: 16px;
+        text-align: left;
+        height: 5px;
+        padding: 6px 6px 6px 12px;
+        color: #4f6b72;
+    }
+
+</style>
+
+
+<script type="text/javascript" src="../../scripts/article/update.js"></script>

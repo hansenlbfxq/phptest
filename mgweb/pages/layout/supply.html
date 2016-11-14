@@ -1,0 +1,23 @@
+<script type="text/javascript">
+    $(function () {
+        $('#menu').accordion({
+            border: false,
+            animate: true,
+            multiple: false,
+            selected: 0
+        });
+//        addTab('文章管理', '../../pages/article/manage.html');
+    })
+</script>
+
+<div id="menu">
+    <div id="A" title="供应管理" data-options="iconCls:'icon-my-task',cls:'menu_panel',border:false">
+        <ul class="submenu">
+            <li><a onclick="addTab('资金供应','../../pages/bs/capital/req/manage.html')">资金供应</a></li>
+            <li><a onclick="addTab('载体供应','../../pages/bs/capital/req/manage.html')">载体供应</a></li>
+            <li><a onclick="addTab('技术供应','../../pages/bs/capital/req/manage.html')">技术供应</a></li>
+            <li><a onclick="addTab('专利供应','../../pages/bs/capital/req/manage.html')">专利供应</a></li>
+            <li><a onclick="addTab('产品供应','../../pages/bs/capital/req/manage.html')">产品供应</a></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,133 @@
+<div class="content">
+
+    <div class="easyui-layout" style="width:98%;height:800px;margin: 15px;border: 1px solid #C1DAD7;">
+
+        <div id="content" region="center" style=" padding:5px;">
+            <form id="addForm" method="post">
+                <table border="1" bordercolor="#a0c6e5" style="border-collapse:collapse;">
+
+                    <tr>
+                        <td width="100px">
+                            <label>企业名称:</label>
+                        </td>
+                        <td>
+                            <input id="addCompany" name="company">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label>产品名称:</label>
+                        </td>
+                        <td>
+                            <input id="addProduct" name="product">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label>产品简介:</label>
+                        </td>
+                        <td>
+                            <input id="addContent" name="content">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label>期望价格:</label>
+                        </td>
+                        <td>
+                            <input id="addPrice" name="price">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label>联系人:</label>
+                        </td>
+                        <td>
+                            <input id="addLink_name" name="link_name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label>联系电话:</label>
+                        </td>
+                        <td>
+                            <input id="addLink_tel" name="link_tel">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label>语言:</label>
+                        </td>
+                        <td>
+                            <input id="addLan" name="lan">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td id="">
+                            <a href="javascript:void(0)" style="padding: 5px; font-size: 16px"
+                               onclick="submitForm()">提交</a>
+                            <a href="javascript:void(0)" style="padding: 5px; font-size: 16px"
+                               onclick="clearForm()">清空</a>
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+<style>
+    #content form > a {
+        font-size: 18px;
+        padding: 5px;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    #content form > table {
+        border: 1px solid #C1DAD7;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        border-collapse: collapse;
+    }
+
+    #content form > table tr td {
+        border: 1px solid #C1DAD7;
+        background: #fff;
+        font-size: 16px;
+        text-align: center;
+        height: 5px;
+        padding: 6px 6px 6px 12px;
+        color: #4f6b72;
+        align: center;
+    }
+
+    #content form textarea {
+        border: 1px solid #C1DAD7;
+        height: 120px;
+
+    }
+
+    #content form .button {
+        float: left;
+        margin-left: 160px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #content form input {
+        width: 250px;
+    }
+
+
+</style>
+
+</div>
+
+
+<script type="text/javascript" src="../../../../mgweb/scripts/requirement/product/add.js"></script>

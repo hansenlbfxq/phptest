@@ -1,0 +1,20 @@
+<script type="text/javascript">
+    $(function () {
+        $('#menu').accordion({
+            border: false,
+            animate: true,
+            multiple: false,
+            selected: 0
+        });
+        addTab('文章管理', '../../pages/article/manage.html');
+    })
+</script>
+
+<div id="menu">
+    <div id="A" title="文章管理" data-options="iconCls:'icon-my-task',cls:'menu_panel',border:false">
+        <ul class="submenu">
+            <li><a onclick="addTab('文章管理','../../pages/article/manage.html')">文章管理</a></li>
+            <li><a onclick="addTab('分类管理','../../pages/article/category.html')">分类管理</a></li>
+        </ul>
+    </div>
+</div>

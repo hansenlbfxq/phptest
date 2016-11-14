@@ -1,0 +1,23 @@
+<script type="text/javascript">
+    $(function () {
+        $('#menu').accordion({
+            border: false,
+            animate: true,
+            multiple: false,
+            selected: 0
+        });
+//        addTab('文章管理', '../../pages/article/manage.html');
+    })
+</script>
+
+<div id="menu">
+    <div id="A" title="需求管理" data-options="iconCls:'icon-my-task',cls:'menu_panel',border:false">
+        <ul class="submenu">
+            <li><a onclick="addTab('资金需求','../../pages/bs/capital/req/manage.html')">资金需求</a></li>
+            <li><a onclick="addTab('载体需求','../../pages/bs/capital/req/manage.html')">载体需求</a></li>
+            <li><a onclick="addTab('技术需求','../../pages/bs/capital/req/manage.html')">技术需求</a></li>
+            <li><a onclick="addTab('专利需求','../../pages/bs/capital/req/manage.html')">专利需求</a></li>
+            <li><a onclick="addTab('产品需求','../../pages/requirement/product/manage.html')">产品需求</a></li>
+        </ul>
+    </div>
+</div>

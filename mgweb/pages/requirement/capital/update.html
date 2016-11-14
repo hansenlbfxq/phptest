@@ -1,0 +1,104 @@
+<!--添加-->
+<div id="up">
+    <form id="upForm" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label>名称:</label></td>
+                <td>
+                    <input id="upName" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>地址:</lable>
+                </td>
+                <td>
+                    <input id="upUrl" name="url">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>图片:</label></td>
+                <td>
+                    <input id="upImg" name="img">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>排序:</lable>
+                </td>
+                <td>
+                    <input id="upRank" name="rank">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>状态:</lable>
+                </td>
+                <td>
+                    <input id="upStatus" name="status">
+                </td>
+            </tr>
+        </table>
+
+        <div class="button">
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">提交</a>
+
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()">清空</a>
+        </div>
+
+    </form>
+    <style>
+        #up form > a {
+            font-size: 18px;
+            puping: 5px;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        #up form > table {
+            border: 1px solid #C1DAD7;
+            width: 100%;
+            height: auto;
+            puping: 0;
+            margin: 0;
+            border-collapse: collapse;
+        }
+
+        #up form > table tr td {
+            border: 1px solid #C1DAD7;
+            background: #fff;
+            font-size: 16px;
+            text-align: left;
+            height: 5px;
+            puping: 6px 6px 6px 12px;
+            color: #4f6b72;
+            align: center;
+        }
+
+        #up form textarea {
+            border: 1px solid #C1DAD7;
+            height: 120px;
+            width: 100%;
+        }
+
+        #up form .button {
+            float: left;
+            margin-left: 160px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #up form input {
+            width: 250px;
+        }
+
+
+    </style>
+
+</div>
+
+
+<script type="text/javascript" src="../../../../scripts/flink/update.js"></script>

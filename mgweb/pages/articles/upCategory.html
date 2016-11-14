@@ -1,0 +1,114 @@
+<!--文章添加-->
+<div id="addCate">
+    <form id="upCategory" method="post">
+
+        <table>
+            <tr>
+                <td width="30%">
+                    <label>父级栏目:</label></td>
+                <td width="70%">
+                    <input id="upCatePid" name="pid">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>栏目名称:</label></td>
+                <td>
+                    <input id="upCateName" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>栏目类别:</lable>
+                </td>
+                <td>
+                    <input id="upCateShowtype" name="showtype">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>栏目地址:</lable>
+                </td>
+                <td>
+                    <input id="upCateUrl" name="url">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>栏目语言:</label></td>
+                <td><input id="upCateLan" name="lan">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>栏目描述:</lable>
+                </td>
+                <td>
+                    <textarea co id="upCateDescr" name="descriptions"> </textarea>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="button">
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">提交</a>
+
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()">清空</a>
+        </div>
+
+    </form>
+    <style>
+        #addCate form > a {
+            font-size: 18px;
+            padding: 5px;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        #addCate form > table {
+            border: 1px solid #C1DAD7;
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 0;
+            border-collapse: collapse;
+        }
+
+        #addCate form > table tr td {
+            border: 1px solid #C1DAD7;
+            background: #fff;
+            font-size: 16px;
+            text-align: left;
+            height: 5px;
+            padding: 6px 6px 6px 12px;
+            color: #4f6b72;
+            align: center;
+        }
+
+        #addCate form textarea {
+            border: 1px solid #C1DAD7;
+            height: 120px;
+            width: 100%;
+        }
+
+        #addCate form .button {
+            float: left;
+            margin-left: 160px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #addCate form input {
+            width: 250px;
+        }
+
+
+    </style>
+
+</div>
+
+
+<script type="text/javascript" src="../../scripts/article/upCategory.js"></script>
+
+

@@ -1,0 +1,19 @@
+<script type="text/javascript">
+    $(function () {
+        $('#menu').accordion({
+            border: false,
+            animate: true,
+            multiple: false,
+            selected: 0
+        });
+        addTab('友情链接管理','../../pages/flink/manage.html');
+    })
+</script>
+
+<div id="menu">
+    <div id="A" title="文章管理" data-options="iconCls:'icon-my-task',cls:'menu_panel',border:false">
+        <ul class="submenu">
+            <li><a onclick="addTab('友情链接管理','../../pages/flink/manage.html')">友情链接管理</a></li>
+        </ul>
+    </div>
+</div>

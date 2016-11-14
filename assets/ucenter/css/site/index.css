@@ -1,0 +1,137 @@
+header,html,body,a,ul,div,header,form,input,h3,label,li,span,iframe,footer{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: block;
+}
+body{
+    min-width: 1000px;
+    background-color: rgb(238,238,238);
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+li{
+    list-style-type:none;
+}
+li,label{
+    font-size: 12px;
+}
+/*logo*/
+header{
+    background-color:rgb(66,98,156) ;
+    padding: 20px;
+    position: relative;
+}
+.myLogo{
+    margin-left: 10%;
+}
+.myLogo1{
+    display: inline-block;
+    width: 33px;
+    height: 32px;
+    background: url("../../images/logo/logo1.png")no-repeat;
+}
+.myLogo2{
+    display: inline-block;
+    width: 144px;
+    height: 33px;
+    background: url("../../images/logo/logo2.png")no-repeat;
+}
+/*header链接*/
+.headerLink{
+    position: absolute;
+    top: 30px;left: 400px;
+}
+.headerLink li{
+    float: left;
+    margin-right: 30px;
+}
+
+/*菜单栏*/
+.menusolid{
+    width: 160px;
+    border: 2px solid orange;
+}
+.leftMenu{
+
+    float: left;
+}
+.iframAll a{
+    color: black;
+}
+.senioriframe{
+    display: block;
+    float: left;
+    padding: 0;
+    width: 80%;
+    height: 1000px;
+    overflow: hidden;
+}
+.iframAll{
+    width: 1000px;
+    margin:30px auto;
+}
+/*清除浮动*/
+.iframAll:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0;}
+/*导航栏*/
+
+.wraplist li{
+    padding: 5px;
+}
+.wraplistColor{
+    color: red;
+}
+
+.wraplist span{
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+.menu_level_2,.menu_level_3{
+    display: none;
+    border-left: 1px solid rgb(200,200,200);
+
+}
+
+.treesolid{
+    display:inline-block;
+    width:15px;
+    height: 1px;
+    background: rgb(200,200,200);
+}
+.wraplist{
+    border-left: 1px solid rgb(200,200,200);
+    margin-top: 10px;
+
+}
+.open{
+    margin-left: 25px;
+}
+.treeColor{
+    font-weight: bold;
+}
+.wraplistColor{
+    color: red!important;
+}
+footer {
+
+    padding: 20px 0;
+    background: rgb(87,87,87);
+}
+footer p{
+    color: rgb(205,205,205);
+    font-size: 12px;
+    text-align: center;
+}

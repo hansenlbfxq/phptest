@@ -1,0 +1,47 @@
+<div id="verifyPage" class="easyui-layout" data-options="fit:true,border:false">
+
+	<div data-options="region:'west',split:false,border:false,collapsible:false" style="width:280px;padding: 10px;border-right:1px solid #EEE;border-top:1px solid #EEE;">
+		<ul id="verifyDir"></ul>
+	</div>
+	
+	<div data-options="region:'center',border:false" style="border-right:1px solid #EEE;border-top:1px solid #EEE;">
+		
+			<div id="editNow" style="height:90%;width:100%"></div>
+			<!-- 存修订版本草稿 -->
+			<form id="saveTmp">
+				<input id="detailId" type="hidden" name="detailId" value="">
+				<input id="content" type="hidden" name="content" value="">
+			</form>
+			
+			<!-- 审核意见layout -->
+			<div id="refuse">
+				<form id="auditForm">
+					<input id="id" type="hidden" name="id" value="">
+					<input id="opinion" type="hidden" name="opinion" class="easyui-validatebox" value="">
+				</form>
+			</div>
+			
+	</div>
+	
+	<!-- <div data-options="region:'east',border:false,split:false,title:'修订版本查看器',collapsed:true" style="width:400px;">
+		<script id="editOld" name="editOld" type="text/plain" style="height:95%;">
+		</script>
+	</div> -->
+	
+	<div data-options="region:'north',border:false" style="padding:10px;text-align:left;">
+		<a class="easyui-linkbutton" data-options="iconCls:'icon-save'" onclick="edit.save();" style="width:80px">存修订稿</a>
+		<a class="easyui-linkbutton" data-options="iconCls:'icon-ok'" onclick="edit.submit();" style="width:80px">审核通过</a>
+		<a class="easyui-linkbutton" data-options="iconCls:'icon-undo'" onclick="edit.openRefuseBox();" style="width:80px">审核驳回</a>
+		<!-- <input id="version" name="version" value="比较历史修订版本"> -->
+	</div>
+	
+</div>
+
+
+<!-- 编辑器配置文件 -->
+<script type="text/javascript" src="ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="ueditor/ueditor.all.js"></script>
+<!-- 自定义按钮 -->
+<script type="text/javascript" src="ueditor/addCustomizeButton.js"></script>
+<script type="text/javascript" src="scripts/TaskManage/verifyPage.js"></script>

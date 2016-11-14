@@ -1,0 +1,54 @@
+<div class="easyui-layout" data-options="fit:true,border:false">
+	<div data-options="region:'west',split:false,border:false,collapsible:false" style="width:350px;padding: 10px;border-right:1px solid #EEE;">
+		<div id='loading' style="position:absolute;z-index:1000;top:0px;left:0px;width:100%;height:100%;background:#DDDDDB;text-align:center;padding-top:30%">  
+			<img src='images/loading.gif'/>   
+		</div>
+		<!-- 构建任务目录树 -->
+		<ul id="changeDir"></ul>
+		<!-- 树的右键菜单 -->
+		<div id="editBox" class="easyui-menu" style="width:150px;">
+			<div onclick="setDir.append()" data-options="iconCls:'icon-add'">添加目录</div>
+			<div onclick="setDir.editor()" data-options="iconCls:'icon-edit'">修改目录</div>
+			<div onclick="setDir.remove()" data-options="iconCls:'icon-remove'">删除目录</div>
+		</div>
+		<!-- 树的修改弹出层 -->
+		<div id="mydiv" title="设置权限" class="easyui-dialog" data-options="closed:true,modal:true,closable:false" style="width:600px;">
+			<form id="myform" method="post">
+				<input type="hidden" name="id" value="" />
+					<table class="fromstyle"> 
+						<tr>
+							<td>节点名称：</td>
+							<td><input type="text" name="name" value="" class="text" /></td>
+						</tr>
+						<tr align="center"  >
+							<td colspan="2"  >
+								<a id="savebtn" class="easyui-linkbutton">确定</a>
+								<a id="cancelbtn"  class="easyui-linkbutton">取消</a>
+							</td>
+						</tr>						  								
+					</table>
+			</form>
+  		</div>
+  		
+	</div>
+	<div data-options="region:'center',border:false">
+		<table id="changeDirTask"></table>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="scripts/TaskManage/changeDir.js"></script>
+<script>  
+    function show(){  
+        $("#loading").fadeOut("normal", function(){  
+            $(this).remove();  
+        });  
+    }      
+    var delayTime;  
+    $.parser.onComplete = function(){  
+        if(delayTime)   
+            clearTimeout(delayTime);  
+        delayTime = setTimeout(show,500);  
+    }  
+</script>

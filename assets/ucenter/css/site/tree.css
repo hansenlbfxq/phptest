@@ -1,0 +1,38 @@
+
+.wraplist li{
+    padding: 5px;
+}
+
+.open,.sub-menu,.sub-menu1,.sub-menu2{
+    display: none;
+    border-left: 1px solid rgb(200,200,200);
+
+}
+.sub-menu1,.sub-menu2{
+    margin-left: 35px;
+
+}
+
+.sub-menu1,.sub-menu2{
+    margin-top: 5px;
+ }
+.treesolid{
+    display:inline-block;
+    width:30px;
+    height: 1px;
+    background: rgb(200,200,200);
+}
+.wraplist{
+    border-left: 1px solid rgb(200,200,200);
+    margin-top: 10px;
+
+}
+.open{
+    margin-left: 35px;
+}
+.wraplistColor{
+    color: red!important;
+}
+.treeColor{
+    font-weight: bold;
+}
